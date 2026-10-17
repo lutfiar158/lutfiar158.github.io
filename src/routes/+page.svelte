@@ -7,7 +7,11 @@
 </script>
 
 <svelte:head>
-	<title>Raka Pratama — Full-Stack Developer</title>
+	<title>Lutfiar Rahman Maarif — Aspiring Full-Stack Developer</title>
+	<meta
+		name="description"
+		content="Portfolio of Lutfiar Rahman Maarif, an Information Systems student building web projects with SvelteKit, TypeScript, and Tailwind CSS while learning full-stack development."
+	/>
 	<meta name="theme-color" content="#0284c7" />
 </svelte:head>
 
