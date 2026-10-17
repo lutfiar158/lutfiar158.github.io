@@ -10,7 +10,7 @@ export type Project = {
 	title: string;
 	description: string;
 	tags: string[];
-	href: string;
+	demo?: string;
 	source: string;
 	accent: string;
 };
@@ -30,157 +30,106 @@ export type Site = {
 	available: boolean;
 	tagline: string;
 	email: string;
-	resumeUrl: string;
 	nav: { label: string; href: string }[];
 	socials: Social[];
 };
 
 export const site: Site = {
-	name: "Lutfiar Rahman Ma'arif",
+	name: 'Lutfiar Rahman Maarif',
 	firstName: 'Lutfi',
-	role: 'Mahasiswa Sistem Informasi',
-	location: 'Majalengka, Indonesia',
-	available: true,
+	role: 'Aspiring Full-Stack Developer',
+	location: 'Indonesia',
+	available: false,
 	tagline:
-		'I craft fast, accessible, and beautiful web apps — turning ideas into clean, scalable products.',
+		'I build responsive web interfaces and am expanding into backend development, databases, and testing through practical projects.',
 	email: 'lutfirahman248@gmail.com',
-	resumeUrl: '/resume.pdf',
 	nav: [
 		{ label: 'Home', href: '#home' },
 		{ label: 'About', href: '#about' },
 		{ label: 'Projects', href: '#projects' },
-		{ label: 'Resume', href: '#resume' },
+		{ label: 'Journey', href: '#resume' },
 		{ label: 'Contact', href: '#contact' }
 	],
-	socials: [
-		{ label: 'GitHub', href: 'https://github.com/', icon: 'github' },
-		{ label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' },
-		{ label: 'X (Twitter)', href: 'https://x.com/', icon: 'twitter' },
-		{ label: 'Instagram', href: 'https://www.instagram.com/', icon: 'instagram' }
-	]
+	socials: [{ label: 'GitHub', href: 'https://github.com/lutfiar158', icon: 'github' }]
 };
 
 export const about = {
 	highlights: [
-		{ value: '4+', label: 'Years Experience' },
-		{ value: '25+', label: 'Projects Delivered' },
-		{ value: '12+', label: 'Happy Clients' }
+		{ value: '2026', label: 'Started university' },
+		{ value: 'Web', label: 'Current focus' },
+		{ value: 'Full-stack', label: 'Learning goal' }
 	],
 	paragraphs: [
-		"Saya adalah seorang Mahasiswa baru Sistem Informasi di Universitas Negeri Semarang. sekaligus seorang Web Developer.",
-		"Saya fokus pada penulisan kode yang bersih dan mudah dipelihara serta menciptakan pengalaman pengguna yang nyaman dan mudah diakses. Saya masih terus belajar dan ingin mengembangkan kemampuan saya."
+		'Saya mahasiswa Sistem Informasi di Universitas Negeri Semarang yang sedang membangun kemampuan pengembangan web lewat proyek nyata.',
+		'Saat ini saya fokus pada frontend dengan SvelteKit, TypeScript, dan Tailwind CSS. Target berikutnya adalah memperdalam backend, database relasional, autentikasi yang aman, dan automated testing—sambil mendokumentasikan proses serta keputusan teknis di tiap proyek.'
 	]
 };
 
 export const skills = [
 	{
-		category: 'Frontend',
-		items: ['React', 'TypeScript', 'Tailwind CSS', 'HTML & CSS']
+		category: 'Currently Using',
+		items: ['SvelteKit', 'Svelte', 'TypeScript', 'Tailwind CSS', 'HTML & CSS']
 	},
 	{
-		category: 'Backend',
-		items: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs']
+		category: 'Development Tools',
+		items: ['Git', 'GitHub', 'Vite']
 	},
 	{
-		category: 'Tools & Others',
-		items: ['Git', 'Docker', 'Vite']
+		category: 'Next Learning Focus',
+		items: ['SQL', 'PostgreSQL', 'Server-side validation', 'Automated testing']
 	}
 ];
 
 export const projects: Project[] = [
 	{
-		title: 'SkyCommerce',
+		title: 'Personal Portfolio Website',
 		description:
-			'A full-featured e-commerce platform with cart, payments, and a powerful admin dashboard.',
-		tags: ['SvelteKit', 'PostgreSQL', 'Prisma', 'Stripe'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
+			'A responsive portfolio website built with SvelteKit, TypeScript, and Tailwind CSS to present my profile, projects, education, and contact information.',
+		tags: ['SvelteKit', 'Svelte 5', 'TypeScript', 'Tailwind CSS'],
+		demo: 'https://lutfiar.me',
+		source: 'https://github.com/lutfiar158/lutfiar158.github.io',
 		accent: 'from-sky-400 to-blue-600'
 	},
 	{
-		title: 'TaskFlow',
+		title: 'Team Portfolio & Landing Page',
 		description:
-			'A collaborative kanban board with real-time updates, drag-and-drop, and team workspaces.',
-		tags: ['React', 'Node.js', 'Socket.io', 'Redis'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
-		accent: 'from-cyan-400 to-sky-600'
-	},
-	{
-		title: 'Weatherly',
-		description:
-			'A minimal weather app with geolocation, 7-day forecasts, and beautiful data visualization.',
-		tags: ['Svelte', 'OpenWeather API', 'Chart.js'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
-		accent: 'from-blue-400 to-indigo-500'
-	},
-	{
-		title: 'DevBlog',
-		description:
-			'A blazing-fast markdown blog with full-text search, syntax highlighting, and RSS.',
-		tags: ['SvelteKit', 'MDSveX', 'Tailwind CSS'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
-		accent: 'from-sky-500 to-cyan-400'
-	},
-	{
-		title: 'FitTrack',
-		description:
-			'A fitness tracking dashboard that visualizes workouts, streaks, and personal records.',
-		tags: ['React', 'D3.js', 'Supabase'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
-		accent: 'from-cyan-500 to-teal-400'
-	},
-	{
-		title: 'SnipVault',
-		description:
-			'A keyboard-first code snippet manager with tags, favorites, and instant search.',
-		tags: ['Svelte', 'IndexedDB', 'PWA'],
-		href: 'https://example.com',
-		source: 'https://github.com/',
-		accent: 'from-blue-500 to-sky-400'
+			'A collaborative single-page portfolio built with semantic HTML and Tailwind CSS CLI, featuring team profiles, service information, and contact links.',
+		tags: ['HTML5', 'Tailwind CSS CLI', 'Responsive UI'],
+		source: 'https://github.com/lutfiar158/landing-page-kelompok1',
+		accent: 'from-cyan-400 to-teal-600'
 	}
 ];
 
 export const experience: TimelineItem[] = [
 	{
-		period: '2023 — Present',
-		title: 'Senior Full-Stack Developer',
-		org: 'TechNova',
+		period: '2026 — Present',
+		title: 'Personal Portfolio Website',
+		org: 'Personal Project',
 		description:
-			'Leading a team building a SaaS analytics platform used by 50k+ users. Own the architecture and release process.'
+			'Building and documenting a responsive portfolio with SvelteKit and TypeScript. Improving code organization, documentation, accessibility, and deployment quality.'
 	},
 	{
-		period: '2021 — 2023',
-		title: 'Frontend Developer',
-		org: 'PixelWorks Studio',
+		period: '2026',
+		title: 'Team Portfolio & Landing Page',
+		org: 'Collaborative Project',
 		description:
-			'Built responsive, accessible interfaces for client projects across e-commerce, fintech, and media.'
-	},
-	{
-		period: '2019 — 2021',
-		title: 'Junior Web Developer',
-		org: 'Startup Hub',
-		description:
-			'Shipped MVPs and maintained production web apps with React and Node.js.'
+			'Contributed to a single-page portfolio project using semantic HTML and Tailwind CSS CLI, with an emphasis on layout, responsive styling, and clear project documentation.'
 	}
 ];
 
 export const education: TimelineItem[] = [
 	{
-		period: '2026 - Present',
-		title: 'Mahasiswa Sistem Informasi',
+		period: '2026 — Present',
+		title: 'Information Systems',
 		org: 'Universitas Negeri Semarang',
 		description:
-			'Mahasiswa baru Sistem Informasi di Universitas Negeri Semarang. Saya masih terus belajar dan ingin mengembangkan kemampuan saya.'
+			'Studying Information Systems while building practical web development skills through personal and collaborative projects.'
 	},
 	{
-		period: '2022 - 2025',
-		title: 'Alumni SMK Negeri 1 Kadipaten',
+		period: '2022 — 2025',
+		title: 'Software Engineering',
 		org: 'SMK Negeri 1 Kadipaten',
 		description:
-			'Menyelesaikan pendidikan di SMK Negeri 1 Kadipaten dengan jurusan Rekayasa Perangkat Lunak. Saya belajar tentang pengembangan perangkat lunak dan pemrograman.'
+			'Completed vocational education in Software Engineering, with an interest in programming and software development.'
 	}
 ];
