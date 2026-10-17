@@ -22,11 +22,11 @@
 			>
 				<span class="relative flex h-2 w-2">
 					<span
-						class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
+						class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-50"
 					></span>
-					<span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+					<span class="relative inline-flex h-2 w-2 rounded-full bg-sky-500"></span>
 				</span>
-				Available for work
+				Building and learning
 			</span>
 
 			<h1
@@ -80,23 +80,19 @@
 				<div
 					class="absolute inset-0 -rotate-3 rounded-3xl bg-linear-to-br from-sky-400 to-cyan-500 opacity-40 blur-sm"
 				></div>
-				<div
-					class="relative overflow-hidden rounded-3xl border border-border bg-card shadow-2xl"
-				>
+				<div class="relative overflow-hidden rounded-3xl border border-border bg-card shadow-2xl">
 					<div class="flex items-center gap-1.5 border-b border-border bg-muted/60 px-4 py-3">
 						<span class="h-3 w-3 rounded-full bg-red-400"></span>
 						<span class="h-3 w-3 rounded-full bg-amber-400"></span>
 						<span class="h-3 w-3 rounded-full bg-emerald-400"></span>
 						<span class="ml-3 font-mono text-xs text-muted-foreground">profile.ts</span>
 					</div>
-					<pre
-						class="overflow-x-auto p-5 font-mono text-sm leading-relaxed sm:text-[15px]"
-					><code><span class="text-sky-500">const</span> <span class="text-cyan-400">profile</span> <span class="text-sky-500">=</span> <span class="text-muted-foreground">&#123;</span>
+					<pre class="overflow-x-auto p-5 font-mono text-sm leading-relaxed sm:text-[15px]"><code><span class="text-sky-500">const</span> <span class="text-cyan-400">profile</span> <span class="text-sky-500">=</span> <span class="text-muted-foreground">&#123;</span>
   <span class="text-foreground">name</span><span class="text-sky-500">:</span> <span class="text-emerald-500">'{site.name}'</span><span class="text-muted-foreground">,</span>
   <span class="text-foreground">role</span><span class="text-sky-500">:</span> <span class="text-emerald-500">'{site.role}'</span><span class="text-muted-foreground">,</span>
   <span class="text-foreground">location</span><span class="text-sky-500">:</span> <span class="text-emerald-500">'{site.location}'</span><span class="text-muted-foreground">,</span>
-  <span class="text-foreground">skills</span><span class="text-sky-500">:</span> <span class="text-muted-foreground">[</span><span class="text-emerald-500">'TS'</span><span class="text-muted-foreground">,</span> <span class="text-emerald-500">'Svelte'</span><span class="text-muted-foreground">,</span> <span class="text-emerald-500">'Node'</span><span class="text-muted-foreground">],</span>
-  <span class="text-foreground">available</span><span class="text-sky-500">:</span> <span class="text-amber-500">true</span><span class="text-muted-foreground">,</span>
+  <span class="text-foreground">stack</span><span class="text-sky-500">:</span> <span class="text-muted-foreground">[</span><span class="text-emerald-500">'SvelteKit'</span><span class="text-muted-foreground">,</span> <span class="text-emerald-500">'TypeScript'</span><span class="text-muted-foreground">],</span>
+  <span class="text-foreground">goal</span><span class="text-sky-500">:</span> <span class="text-emerald-500">'Full-stack developer'</span>
 <span class="text-muted-foreground">&#125;;</span>
 </code></pre>
 				</div>
