@@ -1,31 +1,20 @@
 <script lang="ts">
-	import { education, experience, site } from '$lib/data/site';
+	import { education, experience } from '$lib/data/site';
 	import Icon from './Icon.svelte';
 	import Section from './Section.svelte';
 </script>
 
 <Section
 	id="resume"
-	eyebrow="Resume"
-	title="Experience &amp; education"
-	description="My professional journey, from early roles to the work I do today."
+	eyebrow="Journey"
+	title="Projects & education"
+	description="A transparent snapshot of the projects I'm building and what I'm learning."
 >
-	<div class="mb-10 flex justify-center sm:justify-start">
-		<a
-			href={site.resumeUrl}
-			download
-			class="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-lg shadow-sky-500/20 transition hover:opacity-90"
-		>
-			<Icon name="download" size={18} />
-			Download Resume
-		</a>
-	</div>
-
 	<div class="grid gap-12 lg:grid-cols-2">
 		<div>
 			<h3 class="font-display flex items-center gap-2 text-xl font-semibold">
-				<Icon name="briefcase" size={20} class="text-primary" />
-				Experience
+				<Icon name="code" size={20} class="text-primary" />
+				Project Experience
 			</h3>
 			<ol class="mt-8 space-y-8">
 				{#each experience as item}
