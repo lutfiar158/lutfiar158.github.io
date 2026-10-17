@@ -20,12 +20,12 @@
 	id="contact"
 	eyebrow="Contact"
 	title="Let&apos;s work together"
-	description="Have a project in mind or just want to say hi? My inbox is always open."
+	description="This contact form opens your email app with a message prepared for me; it does not send email directly from the website."
 >
 	<div class="grid gap-10 lg:grid-cols-2">
 		<div class="space-y-4">
 			<a
-				href="mailto:{site.email}"
+				href={`mailto:${site.email}`}
 				class="flex items-center gap-4 rounded-2xl border border-border bg-card p-5 transition hover:border-primary/60"
 			>
 				<span
