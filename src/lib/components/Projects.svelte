@@ -8,7 +8,7 @@
 	id="projects"
 	eyebrow="Projects"
 	title="Things I&apos;ve built"
-	description="A selection of projects I&apos;ve designed, built, and shipped."
+	description="A selection of real projects I've worked on while developing my web skills."
 >
 	<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 		{#each projects as project}
@@ -46,15 +46,17 @@
 					</div>
 
 					<div class="mt-5 flex items-center gap-4 border-t border-border pt-4">
-						<a
-							href={project.href}
-							target="_blank"
-							rel="noreferrer"
-							class="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition hover:underline"
-						>
-							Live
-							<Icon name="external-link" size={15} />
-						</a>
+						{#if project.demo}
+							<a
+								href={project.demo}
+								target="_blank"
+								rel="noreferrer"
+								class="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition hover:underline"
+							>
+								Live Demo
+								<Icon name="external-link" size={15} />
+							</a>
+						{/if}
 						<a
 							href={project.source}
 							target="_blank"
@@ -62,7 +64,7 @@
 							class="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition hover:text-foreground"
 						>
 							<Icon name="github" size={15} />
-							Code
+							Source Code
 						</a>
 					</div>
 				</div>
